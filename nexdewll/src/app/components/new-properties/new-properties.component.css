@@ -1,0 +1,116 @@
+/* Properties Grid */
+.properties-section {
+    padding: 6rem 4rem;
+    background: var(--primary-dark);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: 0.02em;
+    color: white;
+}
+
+.section-description {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: white
+}
+
+.properties-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    color: white;
+}
+
+.property-card {
+    background: var(--secondary-dark);
+    overflow: hidden;
+    transition: all 0.5s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.property-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.property-image {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(135deg, #2d2d2d, #1a1a1a);
+    position: relative;
+    overflow: hidden;
+}
+
+.property-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(26, 26, 26, 0.8) 100%);
+}
+
+.property-info {
+    padding: 2rem;
+}
+
+.property-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.property-location {
+    color: white;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.property-features {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.feature-value {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.feature-label {
+    font-size: 0.8rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.property-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+}
