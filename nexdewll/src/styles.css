@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary-dark: #1a1a1a;
+    --primary-light: #f8f8f8;
+    --accent-gold: #c9a961;
+    --accent-dark-gold: #b8954d;
+    --text-dark: #2c2c2c;
+    --text-light: #666;
+    --text-lighter: #999;
+    --border-color: #e0e0e0;
+    --shadow-light: rgba(0, 0, 0, 0.05);
+    --shadow-medium: rgba(0, 0, 0, 0.1);
+    --shadow-dark: rgba(0, 0, 0, 0.2);
+
+    --font-display: 'Cormorant Garamond', serif;
+    --font-body: 'Montserrat', sans-serif;
+
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+    background: var(--primary-light);
+}
